@@ -1,0 +1,17 @@
+{
+  "name": "connecting-database",
+  "version": "1.0.0",
+  "description": "sample code for connecting mysql db",
+  "main": "connectdb.js",
+  "scripts": {
+    "start": "node connectdb"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {}
+}

@@ -72,3 +72,54 @@
                 </div>
 
             </div>
+
+            <div class="form sign-up">
+                <div class="imgdiv2">
+                    <!-- side navigation bar -->
+                    <!-- <img src="jb.jpg" class="img5"> <br>
+                    <img src="facebbok.png" class="img6"> <br>
+                    <img src="twitter.png" class="img7"> <br>
+                    <img src="linkedin.jpg" class="img8"> <br> -->
+                </div>
+                <h2>Create your Account</h2>
+                <label>
+                    <span><b><i>Your Name</i></b></span>
+                    <input type="text" class='text' id='signup-name' required>
+                </label>
+
+                <label>
+                    <span><b><i>Enter your Email</i></b></span>
+                    <input type="email" class='text' id='signup-email' required>
+                </label>
+
+                <label>
+                    <span><b><i>Password</i></b></span>
+                    <input type="password" class="password" id="signup-password" required>
+                </label>
+
+                <!-- <label> 
+                    <span><b><i>Confirm Password</i></b></span>
+                    <input type="password" class="password" id="signup-confpassword" required>
+                </label> -->
+                <label>
+                    <span><b><i>Mobile no</i></b></span>
+                    <input type="text" maxlength="11" id="signup-phn" required>
+                </label>
+
+                <button type="button" class="submit" id="signup">Sign Up</button>
+            </div>
+
+        </div>
+
+    </div>
+        
+        
+    <script>
+        document.querySelector(".img__btn").addEventListener("click", function() {
+            document.querySelector(".cont").classList.toggle("s--signup");
+        });
+    </script>
+
+    <script src="login_signup_script.js"></script>
+</body>
+</html>

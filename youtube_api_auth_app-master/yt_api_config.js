@@ -32,7 +32,6 @@ feed.addEventListener('click', e => {
   e.preventDefault();
 
   channel_list();
-  console.log("from event");  
 
 });
 

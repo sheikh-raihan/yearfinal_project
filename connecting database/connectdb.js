@@ -15,6 +15,21 @@ app.use(bodyParser.json());
 app.listen(3000,()=> console.log("listening at port 3000."));
 
 
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "project",
+  password: "1234Abcd.",
+  database: "pyt",
+  insecureAuth : true
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+
+
 //sign in
 app.post('/signin',(request, result) => {
     let sqlQuery = "SELECT * FROM userid WHERE email=\"" + request.body.em+ "\"";
@@ -86,18 +101,7 @@ app.post('/user',(request, result) => {
 
 
 
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "project",
-    password: "1234Abcd.",
-    database: "pyt",
-    insecureAuth : true
-  });
-  
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-});
+
 
 
 module.exports = con
